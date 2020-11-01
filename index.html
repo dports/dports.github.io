@@ -1,9 +1,20 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8" />
+    <meta charset=utf-8>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DartPorts - Game and Software ports base</title>
+    <!--[if IE]>
+        <script>
+            document.createElement('header');
+            document.createElement('nav');
+            document.createElement('section');
+            document.createElement('article');
+            document.createElement('aside');
+            document.createElement('footer');
+        </script>
+    <![endif]-->
     <meta name="theme-color" content="#0088FF" />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="shortcut icon" href="https://avatars1.githubusercontent.com/u/73774059?s=16&v=4" />
@@ -17,17 +28,45 @@
         
         body {
             min-height:100%;
-            background-color: #222222;
+            background-color: #004480;
             background-repeat: no-repeat;
             background-position: center center;
             -webkit-font-smoothing: antialiased;
         }
+		
+		.header {
+            position: center;
+			color: #FFFFFF;
+			background: #004480;
+			text-shadow: 4px 3px 0 #0088ff;
+			color: #FFFFFF;
+			background: #004480;
+		}
     </style>
 </head>
 <body>
     <div id="dports">
         <div class="dports page">
-            
+			<header>
+				<div class="header">DartPorts</div>
+			</header>
+			<nav>
+				Nav Test
+			</nav>
+			<section>
+				<article>
+					<header>
+						Article Test
+					</header>
+					Article Body
+				</article>
+			</section>
+			<aside>
+				sidebar content
+			</aside>
+			<footer>
+				DartPower Team © 2020
+			</footer>
         </div>
     </div>
 </body>
